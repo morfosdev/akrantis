@@ -1995,9 +1995,12 @@ width: '155px',
             elementsProperties:['{}'],
 
             styles:[`{
-	width: 200,
-	height: "100%",
-	backgroundColor: "white"
+alignItems: 'center',
+flexDirection: 'row',
+paddingHorizontal: '24',
+paddingVertical: '8',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
