@@ -689,7 +689,7 @@ console.log({item});
         `{ flex: 1 }`, 
         `{ 
 	width: "80%",
-	maxWidth: 280,
+	maxWidth: 300,
 	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
@@ -1159,7 +1159,7 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 280,
+	maxWidth: 300,
 	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
@@ -1193,7 +1193,7 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 280,
+	maxWidth: 300,
 	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
@@ -1370,7 +1370,7 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 280,
+	maxWidth: 300,
 	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
@@ -1912,7 +1912,7 @@ tools.setData({
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 280,
+	maxWidth: 300,
 	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
