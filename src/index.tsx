@@ -1435,11 +1435,13 @@ fontWeight: '700',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	fontSize: '$var_all.texts.sizes.small',
+}`
           ],
 
           children: [
-            "Escreva..."
+            `Please login to continue to your account`
           ],
 
           args,
