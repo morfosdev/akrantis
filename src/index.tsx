@@ -2737,7 +2737,7 @@ xmlns="http://www.w3.org/2000/svg"
 
 }, 
 'colors': { 
-'primary': '#444', 
+'primary': '#A2DA90', 
 'secondary': "#0064fe", 'smoke': "#ddd" } 
 , 
 'lists': { 
