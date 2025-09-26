@@ -1515,7 +1515,34 @@ padding: 10,
             args,
           }}/>
         , 
-        (...args:any) => <Elements.IptTxtEdit pass={{
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+padding: 10,
+margimBottom: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Password`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -1539,7 +1566,11 @@ padding: 10,
 }],
 
           args,
-        }}/>, 
+        }}/>],
+
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
