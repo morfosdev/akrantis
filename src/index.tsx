@@ -1580,41 +1580,6 @@ fontWeight: '700',
             args,
           }}/>
         , 
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-	keyboardType: 'phone-pad',
-	maxLength: 20
-}`],
-
-          stylesArray: [`{ 
-	padding: 8,
-	paddingLeft: 2,
-	borderBottomColor: "$var_all.colors.primary",
-	borderBottomWidth: 2,
-	marginBottom: 16,
-	textAlign: "left"
-}`],
-
-          path: [`sc.A0.forms.iptsChanges.pass`],
-
-          funcsArray: [(txt) => {
-const digits = String(txt).replace(/[^0-9]/g, '').slice(0, 11);
-  const ddd = digits.slice(0, 2);
-  const isCel = digits.length > 10;
-  const first = digits.slice(2, isCel ? 7 : 6);
-  const last  = digits.slice(isCel ? 7 : 6, isCel ? 11 : 10);
-
-  const mask =
-    (ddd ? '(' + ddd + ') ' : '') +
-    (first ? first : '') +
-    (last ? ' - ' + last : '');
-
-  console.log({ mask });
-	tools.setData({path: "sc.A0.forms.iptsChanges.pass", value: mask });
-}],
-
-          args,
-        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
