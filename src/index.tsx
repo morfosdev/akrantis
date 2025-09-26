@@ -1398,18 +1398,57 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
         , 
         
 
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-      styles:[{
-	width: 80,
-	height: 30
-}],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-      args,
-    }}/>, 
+          arrStyles: [
+            `{
+fontSize: '$var_all.texts.sizes.medium',
+fontWeight: '700',
+}`
+          ],
+
+          children: [
+            `Login`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            "Escreva..."
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
