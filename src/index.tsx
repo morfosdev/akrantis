@@ -1402,7 +1402,9 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             elementsProperties:['{}'],
 
             styles:[`{
-	paddingLeft: 20,
+width: '100%',
+padding: 10,
+margimBottom: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
