@@ -1469,14 +1469,11 @@ fontWeight: '700',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: '100%',
+padding: 10,
+margimBottom: 10,
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
@@ -1497,13 +1494,11 @@ fontWeight: '700',
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [`{ 
-	padding: 8,
-	paddingLeft: 2,
-	borderBottomColor: "$var_all.colors.primary",
-	borderBottomWidth: 2,
-	marginBottom: 16,
-	textAlign: "left"
+          stylesArray: [`{
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+padding: 10,
 }`],
 
           path: [`sc.A0.forms.iptsChanges.userEmail`],
@@ -1523,13 +1518,11 @@ fontWeight: '700',
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [`{ 
-	padding: 8,
-	paddingLeft: 2,
-	borderBottomColor: "$var_all.colors.primary",
-	borderBottomWidth: 2,
-	marginBottom: 16,
-	textAlign: "left"
+          stylesArray: [`{
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+padding: 10,
 }`],
 
           path: [`sc.A0.forms.iptsChanges.userPassword`],
