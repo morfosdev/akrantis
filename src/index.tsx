@@ -1944,9 +1944,9 @@ width: '155px',
         <svg></svg>
       `,
 
-      altura: "30px",
+      altura: "20px",
 
-      largura: "30px",
+      largura: "20px",
 
       preenchimento: ['black'],
 
