@@ -1464,6 +1464,22 @@ fontWeight: '700',
             args,
           }}/>
         , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Email Address`
+          ],
+
+          args,
+
+        }}/>, 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
