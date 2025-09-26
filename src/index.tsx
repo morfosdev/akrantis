@@ -1464,6 +1464,21 @@ fontWeight: '700',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -1479,8 +1494,7 @@ fontWeight: '700',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{ 
@@ -1501,7 +1515,11 @@ fontWeight: '700',
         }})],
 
           args,
-        }}/>, 
+        }}/>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
