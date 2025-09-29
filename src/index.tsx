@@ -1711,14 +1711,14 @@ const typeAccount = loginData?.typeAccount;
 		} else {
 			//Validação Destinador
 const typeAccount = loginData?.typeAccount;
-  const isDest = typeAccount === 'adm';
+  const isDest = typeAccount === 'dest';
 
   if (isDest) {
     tools.goTo('axDestinador');
   } else {
     //Validação Transportador
 const typeAccount = loginData?.typeAccount;
-  const isTransp = typeAccount === 'adm';
+  const isTransp = typeAccount === 'transp';
 
   if (isTransp) {
     tools.goTo('axTransportador');
