@@ -2094,6 +2094,7 @@ width: '155px',
 	height: '100px',
 	flexDirection: 'row',
 	backgroundColor: '#FFF',
+	marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -2116,7 +2117,7 @@ width: '155px',
             elementsProperties:['{}'],
 
             styles:[`{ 
-	width: 150,
+	width: "fit-content",
  minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 5, alignItems: "center", justifyContent: "center" }`],
 
             functions:[async (...args) =>
