@@ -2088,7 +2088,7 @@ width: '155px',
             elementsProperties:['{}'],
 
             styles:[
-        `{ width: "100%", flexDirection: "row", alignItems: "flex-end" }`, `{ padding: 20, backgrondColor: "#FFF" }`],
+        `{ padding: 20, backgrondColor: "#FFF" }`, `{ width: "100%", flexDirection: "row", alignItems: "flex-end" }`],
 
             functions:[()=>{}],            childrenItems:[
 
