@@ -2100,6 +2100,7 @@ borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2190,6 +2191,54 @@ tools.setData({
 
           children: [
             `Adicionar`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+justifyContent: 'center',
+alignItems: 'center',
+height: '44px',
+flexDirection: 'row',
+paddingHorizontal: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Nome da Empresa`
           ],
 
           args,
