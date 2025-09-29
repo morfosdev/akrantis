@@ -1695,13 +1695,38 @@ tools.setData({
 
   console.log('custom 3', { loginData });
 
-  const typeAccount = loginData?.typeAccount;
+	//Validação Administrador
+const typeAccount = loginData?.typeAccount;
   const isAdm = typeAccount === 'adm';
 
   if (isAdm) {
     tools.goTo('a1list');
+	} else {
+	//Validação Industria
+	const typeAccount = loginData?.typeAccount;
+		const isInd = typeAccount === 'ind';
+
+		if (isInd) {
+			tools.goTo('axIndustria');
+		} else {
+			//Validação Destinador
+const typeAccount = loginData?.typeAccount;
+  const isDest = typeAccount === 'adm';
+
+  if (isDest) {
+    tools.goTo('axDestinador');
+  } else {
+    //Validação Transportador
+const typeAccount = loginData?.typeAccount;
+  const isTransp = typeAccount === 'adm';
+
+  if (isTransp) {
+    tools.goTo('axTransportador');
   } else {
     tools.goTo('home');
+  }
+  }
+		}
   }
 }],
  }})]
@@ -3528,6 +3553,7 @@ whereConds ??`
 
           args,
         }}/>, 
+        
 
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"b3form",
@@ -3837,6 +3863,41 @@ xmlns="http://www.w3.org/2000/svg"
  arrFuncs: [() => console.log({args})], args,
  }}/>],
             args,
+        }}/>],
+
+          functions:[()=>{}],
+
+          args,
+        }}/>, 
+
+        (...args: any) => <Elements.Screen3 pass={{
+          pathScreen:"axIndustria",
+
+          styles:[
+              {
+                backgroundColor: '#101',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+                width: '100%',
+              }
+              ],
+
+          screenElements:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `INDUSTRIA`
+          ],
+
+          args,
+
         }}/>],
 
           functions:[()=>{}],
