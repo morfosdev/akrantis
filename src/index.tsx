@@ -2751,6 +2751,7 @@ return (
 
           stylesArray: [`{
 backgroundColor: "#FFF", 
+borderRadius: 10,
 }`],
 
           path: [" "],
