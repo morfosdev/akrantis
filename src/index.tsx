@@ -2218,6 +2218,7 @@ paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2239,6 +2240,36 @@ paddingHorizontal: '10px',
 
           children: [
             `Nome da Empresa`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `E-mail`
           ],
 
           args,
