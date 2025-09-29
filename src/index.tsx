@@ -2111,7 +2111,6 @@ borderColor: "#E9E9EB",
 	height: '100px',
 	flexDirection: 'row',
 	backgroundColor: '#FFF',
-	marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
