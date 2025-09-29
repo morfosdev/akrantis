@@ -2749,7 +2749,9 @@ return (
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [`backgroundColor: "#FFF"`],
+          stylesArray: [`{
+backgroundColor: "#FFF", 
+}`],
 
           path: [" "],
 
