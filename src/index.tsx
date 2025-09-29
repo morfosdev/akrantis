@@ -2076,6 +2076,7 @@ width: '155px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2513,6 +2514,26 @@ return (
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+        `{
+	width: 300,
+	height: "100%",
+	position: 'absolute',
+	right: 0,
+	top: -70,
+	zIndex: 1,
+	alignItems: 'center',
+}`, `{ backgroundColor: "$var_all.colors.smoke" }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
