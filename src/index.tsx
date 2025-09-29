@@ -2530,7 +2530,7 @@ return (
 	right: 0,
 	top: -60,
 	zIndex: 1,
-	alignItems: 'center',
+	//alignItems: 'center',
 }`, `{ backgroundColor: "$var_all.colors.smoke" }`],
 
             functions:[()=>{}],            childrenItems:[
