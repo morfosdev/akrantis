@@ -2528,7 +2528,7 @@ return (
 	height: "100%",
 	position: 'absolute',
 	right: 0,
-	top: -70,
+	top: -60,
 	zIndex: 1,
 	alignItems: 'center',
 }`, `{ backgroundColor: "$var_all.colors.smoke" }`],
