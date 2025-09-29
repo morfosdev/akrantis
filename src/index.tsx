@@ -2080,10 +2080,7 @@ width: '155px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-        `{ width: "100%", height: "100%" }`, `{
-padding: 20,
-}`],
+            styles:[`{ width: "100%", height: "100%" }`],
 
             functions:[()=>{}],            childrenItems:[
 
