@@ -2711,11 +2711,7 @@ return (
 	padding: 10
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -2725,11 +2721,45 @@ return (
           ],
 
           children: [
-            "Escreva..."
+            `Dropdown`
           ],
 
           args,
 
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Nome da Empresa`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
         }}/>],
 
             args,
