@@ -2865,7 +2865,8 @@ tools.setData({
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ 
+            styles:[
+        `{ 
 	width: "fit-content",
 	minWidth: 120, 
 	height: 30, 
@@ -2874,6 +2875,10 @@ tools.setData({
 	alignItems: "center", 
 	justifyContent: "center",
 	margin: 10, 
+}`, `{
+	backgroundColor: 'transparent',
+	borderWidth: 1,
+	borderColor: "$var_all.colors.primary",
 }`],
 
             functions:[async (...args) =>
