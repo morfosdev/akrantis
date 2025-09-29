@@ -2088,6 +2088,23 @@ width: '155px',
             elementsProperties:['{}'],
 
             styles:[`{
+flex: 1,
+margin: 10,
+backgroundColor: '#FFF',
+alignItems: 'center',
+paddingHorizontal: 20,
+paddingBottom: 35,
+borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 	width: '100%',
 	justifyContent: 'center',
 	alignItems: 'center',
@@ -2098,20 +2115,6 @@ width: '155px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	flex: 1,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2193,6 +2196,10 @@ tools.setData({
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
