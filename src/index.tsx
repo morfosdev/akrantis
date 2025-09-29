@@ -2097,6 +2097,20 @@ width: '155px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+	flex: 1,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
