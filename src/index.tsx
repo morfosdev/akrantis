@@ -1667,68 +1667,7 @@ padding: 10,
         `userPassword`, 
         `==`, `$var_sc.A0.forms.iptsChanges.userPassword`],
         }})],
- arrFuncs: [(args) => {
-  console.log('minha custom login 1', args);
-
-  const isArray = Array.isArray(args);
-  const isEmpty = !isArray || args.length === 0;
-
-	if (isEmpty) {
-		
-tools.setData({
-      path: 'sc.A0.forms.showErr',
-      value: true });
-
-    tools.setData({
-      path: 'sc.A0.forms.msgs.msg1',
-      value: 'Usuário ou Senha incorretos.'});
-    return;
-  }
-
-  const loginData = args[0] ?? null;
-
-  console.log('custom 1', { loginData });
-
-  const invalidData = !loginData || typeof loginData !== 'object';
-  console.log('custom 2', { invalidData });
-  if (invalidData) return;
-
-  console.log('custom 3', { loginData });
-
-	//Validação Administrador
-const typeAccount = loginData?.typeAccount;
-  const isAdm = typeAccount === 'adm';
-
-  if (isAdm) {
-    tools.goTo('a1list');
-	} else {
-	//Validação Industria
-	const typeAccount = loginData?.typeAccount;
-		const isInd = typeAccount === 'ind';
-
-		if (isInd) {
-			tools.goTo('axIndustria');
-		} else {
-			//Validação Destinador
-const typeAccount = loginData?.typeAccount;
-  const isDest = typeAccount === 'dest';
-
-  if (isDest) {
-    tools.goTo('axDestinador');
-  } else {
-    //Validação Transportador
-const typeAccount = loginData?.typeAccount;
-  const isTransp = typeAccount === 'transp';
-
-  if (isTransp) {
-    tools.goTo('axTransportador');
-  } else {
-    tools.goTo('home');
-  }
-  }
-		}
-  }
-}],
+ arrFuncs: [undefined],
  }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
