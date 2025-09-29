@@ -2867,7 +2867,14 @@ tools.setData({
 
             styles:[`{ 
 	width: "fit-content",
- minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 5, alignItems: "center", justifyContent: "center" }`],
+	minWidth: 120, 
+	height: 30, 
+	backgroundColor: "$var_all.colors.primary",
+	borderRadius: 5,
+	alignItems: "center", 
+	justifyContent: "center",
+	margin: 10, 
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
