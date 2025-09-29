@@ -3874,7 +3874,7 @@ xmlns="http://www.w3.org/2000/svg"
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ color: 'white', }`
           ],
 
           children: [
@@ -3910,7 +3910,7 @@ xmlns="http://www.w3.org/2000/svg"
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ color: 'white', }`
           ],
 
           children: [
@@ -3945,7 +3945,7 @@ xmlns="http://www.w3.org/2000/svg"
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ color: 'white', }`
           ],
 
           children: [
