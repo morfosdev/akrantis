@@ -2087,8 +2087,14 @@ width: '155px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-        `{ padding: 20, backgrondColor: "#FFF" }`, `{ width: "100%", flexDirection: "row", alignItems: "flex-end" }`],
+            styles:[`{
+	width: '100%',
+	justifyContent: 'center',
+	alignItems: 'center',
+	height: '100px',
+	flexDirection: 'row',
+	backgroundColor: '#FFF',
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
