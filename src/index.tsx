@@ -1667,7 +1667,52 @@ padding: 10,
         `userPassword`, 
         `==`, `$var_sc.A0.forms.iptsChanges.userPassword`],
         }})],
- arrFuncs: [undefined],
+ arrFuncs: [(args) => {
+  console.log("minha custom login 1", args);
+
+  const isArray = Array.isArray(args);
+  const isEmpty = !isArray || args.length === 0;
+
+  if (isEmpty) {
+    tools.setData({
+      path: "sc.A0.forms.showErr",
+      value: true,
+    });
+
+    tools.setData({
+      path: "sc.A0.forms.msgs.msg1",
+      value: "Usuário ou Senha incorretos.",
+    });
+    return;
+  }
+
+  const loginData = args[0] ?? null;
+
+  if (!loginData || typeof loginData !== "object") {
+    console.log("custom 2 - Dados inválidos", { loginData });
+    return;
+  }
+
+  console.log("custom 3", { loginData });
+
+  // 🔑 Pega o tipo de conta ANTES de usar em logs
+  const typeAccount = loginData?.typeAccount;
+
+  // 🔑 Definição das rotas
+  const routes = {
+    adm: "a1list",
+    ind: "axIndustria",
+    dest: "axDestinador",
+    transp: "axTransportador",
+  };
+
+  const targetRoute = routes[typeAccount] || "home";
+
+  console.log("➡️ Redirecionando usuário:", { typeAccount, targetRoute });
+
+  tools.goTo(targetRoute);
+}
+],
  }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
