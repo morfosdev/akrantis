@@ -2781,7 +2781,7 @@ borderRadius: 10,
 	borderRadius: 5,
 	alignItems: "center", 
 	justifyContent: "center",
-	margim: 10, 
+	margin: 10, 
 }`],
 
             functions:[async (...args) =>
