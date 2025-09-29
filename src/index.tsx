@@ -2089,7 +2089,7 @@ width: '155px',
 
             styles:[`{
 flex: 1,
-margin: 10,
+margin: 20,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
