@@ -2697,6 +2697,7 @@ return (
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2705,7 +2706,6 @@ return (
         `{ 
 	width: "90%",
 	maxWidth: 280,
-	minHeight: 150,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	padding: 10
@@ -2715,7 +2715,22 @@ return (
 
             args,
           }}/>
-        ],
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            "Escreva..."
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
