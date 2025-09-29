@@ -2454,7 +2454,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `$arg_name`
+            `$arg_category`
           ],
 
           args,
@@ -2484,7 +2484,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `$arg_name`
+            `$arg_status`
           ],
 
           args,
