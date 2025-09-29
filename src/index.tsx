@@ -2474,22 +2474,20 @@ paddingHorizontal: '10px',
   flexBasis: 80,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$arg_status`
-          ],
-
-          args,
-
-        }}/>],
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+const item = tools.findFlatItem(args);
+const isAvailable =  item.status;
+return (
+  <span style={{ color: isAvailable === "Ativo" ? "green" : "red" }}>
+    {isAvailable}
+  </span>
+)
+}] 
+}}/>
+],
 
             args,
           }}/>
