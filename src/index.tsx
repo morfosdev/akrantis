@@ -2402,7 +2402,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `$item_companyName`
+            `$arg_companyName`
           ],
 
           args,
