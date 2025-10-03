@@ -3056,7 +3056,7 @@ tools.setData({
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`users`],
+   arrRefStrings: [`companies`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a1.list`],
