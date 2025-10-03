@@ -2774,6 +2774,40 @@ borderRadius: 10,
 
           args,
         }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `CNPJ`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+backgroundColor: "#FFF", 
+borderRadius: 10,
+}`],
+
+          path: [`sc.a1.iptChanges.cnpj`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a1.iptChanges.cnpj`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
