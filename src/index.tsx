@@ -1654,7 +1654,7 @@ padding: 10,
  arrFunctions: [async (...args) =>
  functions.firebase.where({ args, pass:{
 
-  arrRefStrings: [`companies`],
+  arrRefStrings: [`users`],
  arrWhere: [
  (...args) =>
         functions.firebase.whereConds({ args, pass:{
@@ -2957,7 +2957,7 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`companies`],
+  arrRefStrings: [`users`],
             arrPathData: [`sc.a1.iptChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
@@ -3056,7 +3056,7 @@ tools.setData({
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`companies`],
+   arrRefStrings: [`users`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a1.list`],
