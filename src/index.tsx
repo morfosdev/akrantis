@@ -3059,7 +3059,7 @@ tools.setData({
    arrRefStrings: [`users`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.A1.list`],
+          keyPath: [`sc.a1.list`],
           value: [`$arg_callback`]
         }})],
         }})]
