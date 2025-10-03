@@ -2764,9 +2764,13 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [" "],
+          path: [`sc.a1.iptChanges.companyName`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a1.iptChanges.companyName`],
+          value: [`$arg_0`]
+        }})],
 
           args,
         }}/>, 
