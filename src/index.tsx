@@ -2909,7 +2909,7 @@ async (...args) =>
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a1.iptChanges`],
-          value: [``]
+          value: [` `]
         }})],
         }}), async (...args) =>
  functions.firebase.where({ args, pass:{
