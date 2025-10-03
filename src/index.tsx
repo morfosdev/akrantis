@@ -2896,7 +2896,22 @@ tools.setData({
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a1.iptChanges.permission`],
+          value: [`Indústria`]
+        }}), 
+async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`users`],
+            arrPathData: [`sc.a1.iptChanges`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a1.iptChanges`],
+          value: [``]
+        }})],
+        }}), async (...args) =>
  functions.firebase.where({ args, pass:{
 
   arrRefStrings: [`users`],
