@@ -2464,7 +2464,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `$arg_category`
+            `$arg_permission`
           ],
 
           args,
