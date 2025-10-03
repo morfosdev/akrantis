@@ -2824,6 +2824,22 @@ borderRadius: 10,
           args,
 
         }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Senha`
+          ],
+
+          args,
+
+        }}/>, 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
@@ -2832,11 +2848,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.userEmail`],
+          path: [`sc.a1.iptChanges.userPassword`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.userEmail`],
+          keyPath: [`sc.a1.iptChanges.userPassword`],
           value: [`$arg_callback`]
         }})],
 
