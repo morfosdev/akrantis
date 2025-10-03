@@ -2769,7 +2769,7 @@ borderRadius: 10,
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a1.iptChanges.companyName`],
-          value: [`$arg_0`]
+          value: [`$arg_callback`]
         }})],
 
           args,
