@@ -1,1 +1,1 @@
-{"1759774390525":{"actionType":"saveAll","createdAt":"1759774390525","actionID":"1759774390525","userID":"#TEMP","path":"system.capsules.ecf18373-d072-41f2-a5be-9280e702695e.capsUseCodeInfo.capsUseInputs.ccc_setVar-1.capsIptCapsValue","oldValue":[],"newValue":["96a14199-1eb2-4c11-9243-4b8e002598ae"]}}
+{"1759775638214":{"actionType":"saveAll","createdAt":"1759775638214","actionID":"1759775638214","userID":"#TEMP","path":"system.capsules.88373954-260a-4a10-95a4-528d29ab3430.capsUseCodeInfo.capsUseDescription.en","oldValue":"$arg_createdAt","newValue":"$arg_dateString"}}
