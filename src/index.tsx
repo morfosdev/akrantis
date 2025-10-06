@@ -3422,11 +3422,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.companyName`],
+          path: [`sc.a5.editData.companyName`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.companyName`],
+          keyPath: [`sc.a5.editData.companyName`],
           value: [`$arg_callback`]
         }})],
 
