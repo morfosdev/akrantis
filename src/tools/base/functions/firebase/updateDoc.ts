@@ -53,9 +53,10 @@ export const updateDocTool = async (props: Tprops) => {
   });
   dataToUpdate = getCtData(newPath.join('.'));
 
- console.log({ Timestamp });
-  // ------ add date update
+  // ------ add date update,
+  console.log({ Timestamp: Timestamp.now() });
   dataToUpdate.updatedAt = Timestamp.now();
+  console.log({ dataToUpdate });
 
   await updateDoc(refColl, dataToUpdate).catch(err =>
     console.log('Erro do updateDoc', { err }),
