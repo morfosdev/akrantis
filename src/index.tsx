@@ -4298,7 +4298,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `Nome da Empresa`
+            `Data da Criação`
           ],
 
           args,
@@ -4329,7 +4329,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `E-mail`
+            `ID do Lote`
           ],
 
           args,
@@ -4360,7 +4360,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `Tipo`
+            `Tipo de Resíduo`
           ],
 
           args,
@@ -4390,7 +4390,7 @@ paddingHorizontal: '10px',
           ],
 
           children: [
-            `Status`
+            `Unidade Geradora`
           ],
 
           args,
