@@ -2863,8 +2863,8 @@ borderRadius: 10,
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges`],
-          value: [` `]
+          keyPath: [`all.toggles.sideRight`],
+          value: [false]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
