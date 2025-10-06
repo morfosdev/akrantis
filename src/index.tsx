@@ -5264,7 +5264,7 @@ async (...args) =>
           ],
 
           children: [
-            `Tipo de Acesso`
+            `Data da Criação`
           ],
 
           args,
@@ -5314,7 +5314,7 @@ async (...args) =>
           ],
 
           children: [
-            `Nome da Empresa`
+            `ID do Lote`
           ],
 
           args,
@@ -5348,7 +5348,7 @@ borderRadius: 10,
           ],
 
           children: [
-            `CNPJ`
+            `Tipo de Resíduo`
           ],
 
           args,
@@ -5382,7 +5382,7 @@ borderRadius: 10,
           ],
 
           children: [
-            `Email do responsável`
+            `Unidade Geradora`
           ],
 
           args,
@@ -5401,40 +5401,6 @@ borderRadius: 10,
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a5.editData.permission.userEmail`],
-          value: [`$arg_callback`]
-        }})],
-
-          args,
-        }}/>, 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Senha`
-          ],
-
-          args,
-
-        }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [`{
-backgroundColor: "#FFF", 
-borderRadius: 10,
-}`],
-
-          path: [`sc.a5.editData.permission.userPassword`],
-
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.permission.userPassword`],
           value: [`$arg_callback`]
         }})],
 
