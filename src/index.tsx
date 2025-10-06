@@ -3566,7 +3566,12 @@ borderRadius: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a5EditForm`],
+          value: [false]
+        }}), async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`all.toggles.sideRight`],
           value: [false]
