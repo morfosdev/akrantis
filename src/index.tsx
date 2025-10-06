@@ -5575,15 +5575,7 @@ async (...args) =>
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`industrias`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.b3.list`],
-          value: [`$arg_callback`]
-        }})],
-        }})]
+ arrFunctions: [()=>{}]
  , trigger: 'on init'
 }})],
 
