@@ -5639,10 +5639,9 @@ async (...args) =>
           value: [`$arg_callback`]
         }}), args => {
 console.log({args, tools});
-  const dataArray = args[0];
   const newArray = [];
 
-  if (Array.isArray(dataArray)) {
+  if (Array.isArray(args)) {
     dataArray.forEach(element => {
       let dateString = '';
 
