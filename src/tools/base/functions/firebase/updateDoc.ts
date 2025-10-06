@@ -53,6 +53,7 @@ export const updateDocTool = async (props: Tprops) => {
   });
   dataToUpdate = getCtData(newPath.join('.'));
 
+ console.log({ Timestamp });
   // ------ add date update
   dataToUpdate.updatedAt = Timestamp.now();
 
