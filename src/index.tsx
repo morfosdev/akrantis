@@ -688,8 +688,8 @@ console.log({item});
         `{ backgroundColor: "$var_all.colors.primary" }`, 
         `{ flex: 1 }`, 
         `{ 
-	maxWidth: 400,
-	minHeight: 400,
+	width: 400,
+	height: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	paddingHorizontal: 25,
@@ -1176,8 +1176,8 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	maxWidth: 400,
-	minHeight: 400,
+	width: 400,
+	height: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	paddingHorizontal: 25,
@@ -1210,8 +1210,8 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	maxWidth: 400,
-	minHeight: 400,
+	width: 400,
+	height: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	paddingHorizontal: 25,
@@ -1387,8 +1387,8 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	maxWidth: 400,
-	minHeight: 400,
+	width: 400,
+	height: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	paddingHorizontal: 25,
@@ -3046,8 +3046,8 @@ async (...args) =>
 
             styles:[
         `{ 
-	maxWidth: 400,
-	minHeight: 400,
+	width: 400,
+	height: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
 	paddingHorizontal: 25,
