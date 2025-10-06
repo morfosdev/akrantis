@@ -5581,7 +5581,7 @@ async (...args) =>
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.b3.list`],
-          value: [`222`]
+          value: [`$arg_callback`]
         }})],
         }})]
  , trigger: 'on init'
