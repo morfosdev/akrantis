@@ -5638,6 +5638,7 @@ async (...args) =>
           keyPath: [`sc.b3.list`],
           value: [`$arg_callback`]
         }}), args => {
+console.log({args, tools});
   const dataArray = args[0];
   const newArray = [];
 
