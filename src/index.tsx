@@ -1453,7 +1453,10 @@ color: '#1D1D1F',
 
           arrStyles: [
             `{
-	fontSize: '$var_all.texts.sizes.small',
+fontSize: 14,
+fontWeight: '400',
+fontFamily: 'Poppins',
+color: '#86868B',
 }`
           ],
 
