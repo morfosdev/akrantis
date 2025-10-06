@@ -4288,7 +4288,7 @@ async (...args) =>
           value: [true]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a4AddForm`],
+          keyPath: [`all.toggles.b3AddForm`],
           value: [true]
         }})]
  , trigger: 'on press'
@@ -4678,7 +4678,7 @@ async (...args) =>
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.b3EditForm", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.b3AddForm", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
         
@@ -4847,47 +4847,16 @@ async (...args) =>
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
-
-          path: [" "],
-
-          funcsArray: [() => {}],
-
-          args,
-        }}/>, 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Nome da Empresa`
-          ],
-
-          args,
-
-        }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
           stylesArray: [`{
 backgroundColor: "#FFF", 
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.companyName`],
+          path: [`sc.b3.iptChanges.createdAt`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.companyName`],
+          keyPath: [`sc.b3.iptChanges.createdAt`],
           value: [`$arg_callback`]
         }})],
 
@@ -4903,7 +4872,7 @@ borderRadius: 10,
           ],
 
           children: [
-            `CNPJ`
+            `ID do Lote`
           ],
 
           args,
@@ -4917,11 +4886,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.cnpj`],
+          path: [`sc.b3.iptChanges.loteID`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.cnpj`],
+          keyPath: [`sc.b3.iptChanges.loteID`],
           value: [`$arg_callback`]
         }})],
 
@@ -4937,7 +4906,7 @@ borderRadius: 10,
           ],
 
           children: [
-            `Email do responsável`
+            `Tipo de Resíduo`
           ],
 
           args,
@@ -4951,11 +4920,45 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.userEmail`],
+          path: [`sc.b3.iptChanges.Residuo`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.userEmail`],
+          keyPath: [`sc.b3.iptChanges.Residuo`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Unidade Geradora`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+backgroundColor: "#FFF", 
+borderRadius: 10,
+}`],
+
+          path: [`sc.b3.iptChanges.unity`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.b3.iptChanges.unity`],
           value: [`$arg_callback`]
         }})],
 
