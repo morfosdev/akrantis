@@ -1926,7 +1926,12 @@ justifyContent: "center"
           ],
 
           arrStyles: [
-            `{ color: "#FFF" }`
+            `{ 
+	color: "#FFF",
+	fontSize: 14,
+	fontWeight: 500,
+	fontFamily: 'Poppins'
+}`
           ],
 
           children: [
