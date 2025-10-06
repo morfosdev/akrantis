@@ -2533,7 +2533,7 @@ paddingHorizontal: '10px',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.product`],
+          keyPath: [`sc.a5.editData.permission`],
           value: [`$arg_item`]
         }}), 
 async (...args) =>
