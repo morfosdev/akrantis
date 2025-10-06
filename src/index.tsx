@@ -3618,10 +3618,20 @@ async (...args) =>
    arrRefStrings: [
         `companies`, `$var_sc.a5.editData.permission.docId`],
             arrPathData: [`$var_sc.a5.editData.permission`],
-            arrFuncs: [async (...args) =>
+            arrFuncs: [
+        async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`$var_sc.a5.editData.permission`],
           value: [` `]
+        }}), 
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a5EditForm`],
+          value: [false]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideRight`],
+          value: [false]
         }})],
         }}), async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
