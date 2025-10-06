@@ -3456,11 +3456,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.cnpj`],
+          path: [`sc.a5.editData.cnpj`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.cnpj`],
+          keyPath: [`sc.a5.editData.cnpj`],
           value: [`$arg_callback`]
         }})],
 
@@ -3490,11 +3490,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.userEmail`],
+          path: [`sc.a5.editData.userEmail`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.userEmail`],
+          keyPath: [`sc.a5.editData.userEmail`],
           value: [`$arg_callback`]
         }})],
 
@@ -3524,11 +3524,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a1.iptChanges.userPassword`],
+          path: [`sc.a5.editData.userPassword`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.userPassword`],
+          keyPath: [`sc.a5.editData.userPassword`],
           value: [`$arg_callback`]
         }})],
 
