@@ -5638,7 +5638,7 @@ async (...args) =>
           keyPath: [`sc.b3.list`],
           value: [`$arg_callback`]
         }}), args => {
-console.log({args, tools});
+
   const newArray = [];
 
   if (Array.isArray(args)) {
@@ -5662,7 +5662,7 @@ console.log({args, tools});
       newArray.push({ ...element, dateString });
     });
   } else {
-    console.error('args[0] não é um array ou está vazio.');
+    console.error('args não é um array ou está vazio.');
   }
 
   tools.setData({ path: 'sc.b3.list', value: newArray });
