@@ -1433,7 +1433,6 @@ width: '100%',
             `{
 fontSize: 25,
 fontWeight: '700',
-fontFamily: 'Inter',
 color: '#1D1D1F',
 }`
           ],
