@@ -4411,7 +4411,7 @@ paddingHorizontal: '10px',
             {}
           ],
 
-          pData: `sc.a1.list`,
+          pData: `sc.b3.list`,
 
           itemElements: [
             
@@ -4468,7 +4468,7 @@ async (...args) =>
           ],
 
           children: [
-            `$arg_companyName`
+            `$arg_createdAt`
           ],
 
           args,
@@ -4499,7 +4499,7 @@ async (...args) =>
           ],
 
           children: [
-            `$arg_userEmail`
+            `$arg_loteID`
           ],
 
           args,
@@ -4530,7 +4530,7 @@ async (...args) =>
           ],
 
           children: [
-            `$arg_permission`
+            `$arg_Residuo`
           ],
 
           args,
@@ -4550,20 +4550,22 @@ async (...args) =>
   flexBasis: 80,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-const item = tools.findFlatItem(args);
-const isAvailable =  item.status;
-return (
-  <span style={{ color: isAvailable === "Ativo" ? "green" : "red" }}>
-    {isAvailable}
-  </span>
-)
-}] 
-}}/>
-],
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `$arg_unity`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
