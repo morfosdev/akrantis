@@ -3612,12 +3612,36 @@ async (...args) =>
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
         `companies`, `$var_sc.a5.editData.permission.docId`],
             arrPathData: [`$var_sc.a5.editData.permission`],
-            arrFuncs: [() => {}],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`$var_sc.a5.editData.permission`],
+          value: [` `]
+        }})],
+        }}), async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`companies`],
+            arrPathData: [`sc.a1.iptChanges`],
+            arrFuncs: [
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a1.iptChanges`],
+          value: [` `]
+        }}), 
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a4AddForm`],
+          value: [false]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideRight`],
+          value: [false]
+        }})],
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
