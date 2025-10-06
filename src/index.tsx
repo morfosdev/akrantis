@@ -5205,7 +5205,7 @@ async (...args) =>
           ],
 
           children: [
-            `PERFIL`
+            `EDITAR INDUSTRIA`
           ],
 
           args,
