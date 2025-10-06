@@ -3612,8 +3612,7 @@ async (...args) =>
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
         `companies`, `$var_sc.a5.editData.permission.docId`],
@@ -3627,25 +3626,6 @@ async (...args) =>
         async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`all.toggles.a5EditForm`],
-          value: [false]
-        }}), async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.sideRight`],
-          value: [false]
-        }})],
-        }}), async (...args) =>
-        functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`companies`],
-            arrPathData: [`sc.a1.iptChanges`],
-            arrFuncs: [
-        async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges`],
-          value: [` `]
-        }}), 
-        async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a4AddForm`],
           value: [false]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
