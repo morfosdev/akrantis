@@ -5642,7 +5642,7 @@ console.log({args, tools});
   const newArray = [];
 
   if (Array.isArray(args)) {
-    dataArray.forEach(element => {
+    args.forEach(element => {
       let dateString = '';
 
       const timestamp = element.createdAt;
