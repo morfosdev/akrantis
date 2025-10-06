@@ -689,11 +689,12 @@ console.log({item});
         `{ flex: 1 }`, 
         `{ 
 	width: "80%",
-	maxWidth: 300,
-	minHeight: 150,
+	maxWidth: 400,
+	minHeight: 330,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	padding: 10
+	paddingHorizontal: 15,
+	paddingVertical: 35,
 }`, 
         `{ width: "fit-content", minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 20, alignItems: "center", justifyContent: "center" }`, 
         `{ color: "#FFF" }`, 
@@ -1177,11 +1178,12 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 300,
-	minHeight: 150,
+	maxWidth: 400,
+	minHeight: 330,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	padding: 10
+	paddingHorizontal: 15,
+	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -1211,11 +1213,12 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 300,
-	minHeight: 150,
+	maxWidth: 400,
+	minHeight: 330,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	padding: 10
+	paddingHorizontal: 15,
+	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -1388,11 +1391,12 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 300,
-	minHeight: 150,
+	maxWidth: 400,
+	minHeight: 330,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	padding: 10
+	paddingHorizontal: 15,
+	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -3053,11 +3057,12 @@ async (...args) =>
             styles:[
         `{ 
 	width: "80%",
-	maxWidth: 300,
-	minHeight: 150,
+	maxWidth: 400,
+	minHeight: 330,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	padding: 10
+	paddingHorizontal: 15,
+	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
             functions:[()=>{}],            childrenItems:[
