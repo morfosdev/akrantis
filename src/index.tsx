@@ -5637,11 +5637,36 @@ async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.b3.list`],
           value: [`$arg_callback`]
-        }}), (args) => {
+        }}), args => {
+  const dataArray = args[0];
+  const newArray = [];
 
-console.log({args});
-console.log({tools});
-}],
+  if (Array.isArray(dataArray)) {
+    dataArray.forEach(element => {
+      let dateString = '';
+
+      const timestamp = element.createdAt;
+
+      if (timestamp && typeof timestamp.toDate === 'function') {
+        const dateObject = timestamp.toDate();
+
+        dateString = dateObject.toLocaleDateString('pt-BR', {
+          day: '2-digit',
+          month: '2-digit',
+          year: 'numeric',
+        });
+      } else {
+        dateString = 'Data Indisponível';
+      }
+
+      newArray.push({ ...element, dateString });
+    });
+  } else {
+    console.error('args[0] não é um array ou está vazio.');
+  }
+
+  tools.setData({ path: 'sc.b3.list', value: newArray });
+],
         }})]
  , trigger: 'on init'
 }})],
