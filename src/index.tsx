@@ -2529,7 +2529,20 @@ flexDirection: 'row',
 paddingHorizontal: '10px',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideRight`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a4AddForm`],
+          value: [true]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
