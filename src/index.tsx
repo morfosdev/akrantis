@@ -4997,7 +4997,7 @@ borderRadius: 10,
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a4AddForm`],
+          keyPath: [`all.toggles.b3AddForm`],
           value: [false]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
@@ -5042,24 +5042,19 @@ async (...args) =>
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.permission`],
-          value: [`Indústria`]
-        }}), async (...args) =>
+ arrFunctions: [async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`companies`],
-            arrPathData: [`sc.a1.iptChanges`],
+  arrRefStrings: [`industrias`],
+            arrPathData: [`sc.b3.iptsChanges`],
             arrFuncs: [
         async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges`],
+          keyPath: [`sc.b3.iptsChanges`],
           value: [` `]
         }}), 
         async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a4AddForm`],
+          keyPath: [`all.toggles.b3AddForm`],
           value: [false]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
