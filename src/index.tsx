@@ -1673,9 +1673,9 @@ color: '#86868B',
 
       `,
 
-      altura: "30px",
+      altura: "18px",
 
-      largura: "30px",
+      largura: "18px",
 
       preenchimento: ['black'],
 
