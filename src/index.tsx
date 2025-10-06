@@ -1560,7 +1560,7 @@ color: '#86868B',
           propsArray: [{}],
 
           stylesArray: [`{
-borderRadius: 6,
+borderRadius: 10,
 borderWidth: 1,
 borderColor: '#E6E7E8',
 padding: 10,
@@ -1633,7 +1633,7 @@ color: '#86868B',
           propsArray: [{}],
 
           stylesArray: [`{
-borderRadius: 6,
+borderRadius: 10,
 borderWidth: 1,
 borderColor: '#E6E7E8',
 padding: 10,
