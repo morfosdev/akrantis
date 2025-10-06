@@ -48,9 +48,28 @@ export const updateDocTool = async (props: Tprops) => {
   // ------ read Data
   const newPath = arrPathData.map(i => testVarType(i, args));
   console.log({ newPath });
-  const pathStr = newPath.join('.');
-  console.log({ pathStr });
-  const fetched = getCtData(pathStr);
+
+  let pathStr: string | undefined;
+  let fetched: any;
+
+  // se for array de strings
+  if (newPath.every(i => typeof i === 'string')) {
+    pathStr = newPath.join('.');
+    console.log({ pathStr });
+    fetched = getCtData(pathStr);
+  }
+  // se for array de objetos → faz um merge (flat) em um único objeto
+  else if (newPath.every(i => typeof i === 'object' && i !== null)) {
+    const mergedObj = Object.assign({}, ...newPath);
+    console.log({ mergedObj });
+    fetched = mergedObj;
+  }
+  // caso misto ou inválido
+  else {
+    console.warn('newPath contém tipos mistos ou inválidos:', newPath);
+    fetched = {};
+  }
+
   console.log({ fetched });
 
   // --- garante objeto
@@ -63,6 +82,7 @@ export const updateDocTool = async (props: Tprops) => {
     ...baseUpdate,
     updatedAt: Timestamp.now(),
   };
+
   console.log({ dataToUpdate });
 
   await updateDoc(refColl, dataToUpdate).catch(err =>
@@ -80,3 +100,4 @@ export const updateDocTool = async (props: Tprops) => {
 
   return dataToUpdate;
 };
+
