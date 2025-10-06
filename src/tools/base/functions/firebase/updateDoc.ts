@@ -47,6 +47,7 @@ export const updateDocTool = async (props: Tprops) => {
 
   // ------ read Data
   const newPath = arrPathData.map(i => testVarType(i, args));
+  console.log({ newPath });
   const pathStr = newPath.join('.');
   console.log({ pathStr });
   const fetched = getCtData(pathStr);
@@ -79,4 +80,3 @@ export const updateDocTool = async (props: Tprops) => {
 
   return dataToUpdate;
 };
-
