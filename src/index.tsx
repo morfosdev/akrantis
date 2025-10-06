@@ -3093,11 +3093,11 @@ borderRadius: 10,
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.sideRight`],
+          keyPath: [`all.toggles.a4AddForm`],
           value: [false]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a4AddForm`],
+          keyPath: [`all.toggles.sideRight`],
           value: [false]
         }})]
  , trigger: 'on press'
@@ -3147,10 +3147,20 @@ async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`companies`],
             arrPathData: [`sc.a1.iptChanges`],
-            arrFuncs: [async (...args) =>
+            arrFuncs: [
+        async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a1.iptChanges`],
           value: [` `]
+        }}), 
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a4AddForm`],
+          value: [false]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideRight`],
+          value: [false]
         }})],
         }})]
  , trigger: 'on press'
