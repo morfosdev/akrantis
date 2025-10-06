@@ -1470,7 +1470,6 @@ color: '#1D1D1F',
             `{
 fontSize: 14,
 fontWeight: '400',
-fontFamily: 'Poppins',
 color: '#86868B',
 }`
           ],
@@ -1521,7 +1520,6 @@ width: '100%',
 
           arrStyles: [
             `{
-fontFamily: 'Poppins',
 fontSize: 14,
 color: '#86868B',
 }`
@@ -1621,7 +1619,6 @@ width: '100%',
 
           arrStyles: [
             `{
-fontFamily: 'Poppins',
 fontSize: 14,
 color: '#86868B',
 }`
@@ -1708,7 +1705,6 @@ color: '#86868B',
 
           arrStyles: [
             `{
-fontFamily: 'Poppins',
 fontSize: 14,
 color: '#86868B',
 }`
@@ -1811,7 +1807,6 @@ padding: 10,
 
           arrStyles: [
             `{
-fontFamily: 'Poppins',
 fontSize: 14,
 color: 'red',
 }`
@@ -1935,7 +1930,6 @@ justifyContent: "center"
 	color: "#FFF",
 	fontSize: 14,
 	fontWeight: 500,
-	fontFamily: 'Poppins'
 }`
           ],
 
