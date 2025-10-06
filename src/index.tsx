@@ -1433,8 +1433,9 @@ margimBottom: 10,
 
           arrStyles: [
             `{
-fontSize: '$var_all.texts.sizes.large',
+fontSize: 25,
 fontWeight: '700',
+fontFamily: 'Poppins',
 }`
           ],
 
