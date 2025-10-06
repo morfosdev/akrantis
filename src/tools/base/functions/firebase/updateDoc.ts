@@ -46,16 +46,20 @@ export const updateDocTool = async (props: Tprops) => {
     );
 
   // ------ read Data
-  let dataToUpdate: any = {};
-  const newPath = arrPathData.map(i => {
-    const varValue = testVarType(i, args);
-    return varValue;
-  });
-  dataToUpdate = getCtData(newPath.join('.'));
+  const newPath = arrPathData.map(i => testVarType(i, args));
+  const pathStr = newPath.join('.');
+  const fetched = getCtData(pathStr);
 
-  // ------ add date update,
-  console.log({ Timestamp: Timestamp.now() });
-  dataToUpdate.updatedAt = Timestamp.now();
+  // --- garante objeto
+  const baseUpdate =
+    fetched && typeof fetched === 'object' && !Array.isArray(fetched)
+      ? { ...fetched }
+      : {};
+
+  const dataToUpdate = {
+    ...baseUpdate,
+    updatedAt: Timestamp.now(),
+  };
   console.log({ dataToUpdate });
 
   await updateDoc(refColl, dataToUpdate).catch(err =>
@@ -73,4 +77,3 @@ export const updateDocTool = async (props: Tprops) => {
 
   return dataToUpdate;
 };
-
