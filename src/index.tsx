@@ -2250,9 +2250,14 @@ borderColor: "#E9E9EB",
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`all.toggles.sideRight`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a4AddForm`],
           value: [true]
         }})]
  , trigger: 'on press'
@@ -2611,6 +2616,17 @@ return (
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "all.toggles.sideRight", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ backgroundColor: 'transparent', }`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.a4AddForm", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
         
@@ -3051,6 +3067,10 @@ async (...args) =>
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
