@@ -1812,7 +1812,9 @@ padding: 10,
 
           arrStyles: [
             `{
-	color: "red"
+fontFamily: 'Poppins',
+fontSize: 14,
+color: 'red',
 }`
           ],
 
