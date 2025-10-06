@@ -48,7 +48,9 @@ export const updateDocTool = async (props: Tprops) => {
   // ------ read Data
   const newPath = arrPathData.map(i => testVarType(i, args));
   const pathStr = newPath.join('.');
+  console.log({ pathStr });
   const fetched = getCtData(pathStr);
+  console.log({ fetched });
 
   // --- garante objeto
   const baseUpdate =
@@ -77,3 +79,4 @@ export const updateDocTool = async (props: Tprops) => {
 
   return dataToUpdate;
 };
+
