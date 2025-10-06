@@ -4779,7 +4779,7 @@ async (...args) =>
           ],
 
           children: [
-            `ADICIONAR PERMISSÃO`
+            `CRIAR LOTE`
           ],
 
           args,
