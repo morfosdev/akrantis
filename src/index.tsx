@@ -5328,11 +5328,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.permission.companyName`],
+          path: [`sc.b3.editData.industria.loteID`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.permission.companyName`],
+          keyPath: [`sc.b3.editData.industria.loteID`],
           value: [`$arg_callback`]
         }})],
 
@@ -5362,11 +5362,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.permission.cnpj`],
+          path: [`sc.b3.editData.industria.Residuo`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.permission.cnpj`],
+          keyPath: [`sc.b3.editData.industria.Residuo`],
           value: [`$arg_callback`]
         }})],
 
