@@ -2540,11 +2540,16 @@ paddingHorizontal: '10px',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.sideRight`],
+          keyPath: [`sc.a5.editData.product`],
+          value: [`$arg_item`]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.a5EditForm`],
           value: [true]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a5EditForm`],
+          keyPath: [`all.toggles.sideRight`],
           value: [true]
         }})]
  , trigger: 'on press'
