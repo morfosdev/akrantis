@@ -4487,12 +4487,12 @@ paddingHorizontal: '10px',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.permission`],
+          keyPath: [`sc.b3.editData.industria`],
           value: [`$arg_item`]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.a5EditForm`],
+          keyPath: [`all.toggles.b3EditForm`],
           value: [true]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
@@ -4678,7 +4678,7 @@ async (...args) =>
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.a4AddForm", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.b3EditForm", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
         
@@ -4838,46 +4838,27 @@ async (...args) =>
           ],
 
           children: [
-            `Tipo de Acesso`
+            `Data da Criação`
           ],
 
           args,
 
         }}/>, 
-        
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
 
-            styles:[
-        `{ 
-	width: "90%",
-	maxWidth: 280,
-	backgroundColor: "#FFF",
-	borderRadius: 20,
-	padding: 10
-}`, `{ alignItems: "center", justifyContent: "center" }`],
+          path: [" "],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Indústria`
-          ],
+          funcsArray: [() => {}],
 
           args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
+        }}/>, 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
