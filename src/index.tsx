@@ -5578,7 +5578,11 @@ async (...args) =>
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
    arrRefStrings: [`industrias`],
-            arrFuncs: [()=>{}],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.b3.list`],
+          value: [`222`]
+        }})],
         }})]
  , trigger: 'on init'
 }})],
