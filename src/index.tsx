@@ -688,12 +688,11 @@ console.log({item});
         `{ backgroundColor: "$var_all.colors.primary" }`, 
         `{ flex: 1 }`, 
         `{ 
-	width: "80%",
 	maxWidth: 400,
-	minHeight: 330,
+	minHeight: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	paddingHorizontal: 15,
+	paddingHorizontal: 25,
 	paddingVertical: 35,
 }`, 
         `{ width: "fit-content", minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 20, alignItems: "center", justifyContent: "center" }`, 
@@ -1177,12 +1176,11 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	width: "80%",
 	maxWidth: 400,
-	minHeight: 330,
+	minHeight: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	paddingHorizontal: 15,
+	paddingHorizontal: 25,
 	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
@@ -1212,12 +1210,11 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	width: "80%",
 	maxWidth: 400,
-	minHeight: 330,
+	minHeight: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	paddingHorizontal: 15,
+	paddingHorizontal: 25,
 	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
@@ -1390,12 +1387,11 @@ width={14}     height={12}     fill="red"     viewBox="0 0 14 12"     {...props}
 
             styles:[
         `{ 
-	width: "80%",
 	maxWidth: 400,
-	minHeight: 330,
+	minHeight: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	paddingHorizontal: 15,
+	paddingHorizontal: 25,
 	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
@@ -3050,12 +3046,11 @@ async (...args) =>
 
             styles:[
         `{ 
-	width: "80%",
 	maxWidth: 400,
-	minHeight: 330,
+	minHeight: 400,
 	backgroundColor: "#FFF",
 	borderRadius: 20,
-	paddingHorizontal: 15,
+	paddingHorizontal: 25,
 	paddingVertical: 35,
 }`, `{ alignItems: "center", justifyContent: "center" }`],
 
