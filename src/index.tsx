@@ -5666,7 +5666,7 @@ async (...args) =>
   }
 
   tools.setData({ path: 'sc.b3.list', value: newArray });
-],
+}],
         }})]
  , trigger: 'on init'
 }})],
