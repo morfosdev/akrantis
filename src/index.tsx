@@ -2541,7 +2541,7 @@ paddingHorizontal: '10px',
 async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a5.editData.product`],
-          value: [`$arg_item`]
+          value: [`$arg_0`]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
