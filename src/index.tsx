@@ -5575,7 +5575,11 @@ async (...args) =>
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: ['noPath'],
+            arrFuncs: [()=>{}],
+        }})]
  , trigger: 'on init'
 }})],
 
