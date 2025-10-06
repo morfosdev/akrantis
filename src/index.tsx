@@ -3422,11 +3422,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.companyName`],
+          path: [`sc.a5.editData.permission.companyName`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.companyName`],
+          keyPath: [`sc.a5.editData.permission.companyName`],
           value: [`$arg_callback`]
         }})],
 
@@ -3456,11 +3456,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.cnpj`],
+          path: [`sc.a5.editData.permission.cnpj`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.cnpj`],
+          keyPath: [`sc.a5.editData.permission.cnpj`],
           value: [`$arg_callback`]
         }})],
 
@@ -3490,11 +3490,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.userEmail`],
+          path: [`sc.a5.editData.permission.userEmail`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.userEmail`],
+          keyPath: [`sc.a5.editData.permission.userEmail`],
           value: [`$arg_callback`]
         }})],
 
@@ -3524,11 +3524,11 @@ backgroundColor: "#FFF",
 borderRadius: 10,
 }`],
 
-          path: [`sc.a5.editData.userPassword`],
+          path: [`sc.a5.editData.permission.userPassword`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.userPassword`],
+          keyPath: [`sc.a5.editData.permission.userPassword`],
           value: [`$arg_callback`]
         }})],
 
@@ -3624,8 +3624,9 @@ async (...args) =>
         }})],
         }}), async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
-   arrRefStrings: [`companies`],
-            arrPathData: [`sc.a5.editData`],
+   arrRefStrings: [
+        `companies`, `$var_sc.a5.editData.permission.docId`],
+            arrPathData: [`$var_sc.a5.editData.permission`],
             arrFuncs: [() => {}],
         }})]
  , trigger: 'on press'
