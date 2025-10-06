@@ -4704,8 +4704,8 @@ xmlns="http://www.w3.org/2000/svg"
  } 
 , 'sc': { 
 'A0': { 'forms': { 'iptsChanges': {
-	userEmail: "adm@teste.com",
-	userPassword: "1234"
+	userEmail: "admin",
+	userPassword: "admin"
 } } 
  } 
 , 
