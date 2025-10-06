@@ -1436,6 +1436,7 @@ margimBottom: 10,
 fontSize: 25,
 fontWeight: '700',
 fontFamily: 'Poppins',
+color: '#1D1D1F',
 }`
           ],
 
