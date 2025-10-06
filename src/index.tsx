@@ -1503,7 +1503,7 @@ margimBottom: 10,
 
           arrStyles: [
             `{
-fontFamily: 'Poppins',
+fontFamily: 'Inter',
 fontSize: 14,
 color: '#86868B',
 }`
