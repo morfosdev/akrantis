@@ -1743,7 +1743,14 @@ padding: 10,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: "fit-content", minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 20, alignItems: "center", justifyContent: "center" }`],
+            styles:[`{ 
+width: "100%",
+height: 40, 
+backgroundColor: "#A2DA90", 
+borderRadius: 10, 
+alignItems: "center", 
+justifyContent: "center" 
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
