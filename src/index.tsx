@@ -3614,10 +3614,6 @@ async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a1.iptChanges.permission`],
-          value: [`Indústria`]
-        }}), async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`companies`],
             arrPathData: [`sc.a1.iptChanges`],
@@ -3626,6 +3622,11 @@ async (...args) =>
           keyPath: [`sc.a1.iptChanges`],
           value: [` `]
         }})],
+        }}), async (...args) =>
+        functions.firebase.updateDocTool({ args, pass:{
+   arrRefStrings: [`companies`],
+            arrPathData: [`sc.a5.editData`],
+            arrFuncs: [() => {}],
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
