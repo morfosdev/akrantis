@@ -4997,7 +4997,7 @@ borderRadius: 10,
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.b3.iptsChanges`],
+          keyPath: [`sc.b3.iptChanges`],
           value: [` `]
         }}), 
 async (...args) =>
@@ -5050,11 +5050,11 @@ async (...args) =>
  arrFunctions: [async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`industrias`],
-            arrPathData: [`sc.b3.iptsChanges`],
+            arrPathData: [`sc.b3.iptChanges`],
             arrFuncs: [
         async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.b3.iptsChanges`],
+          keyPath: [`sc.b3.iptChanges`],
           value: [` `]
         }}), 
         async (...args) =>
