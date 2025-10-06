@@ -4997,6 +4997,11 @@ borderRadius: 10,
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
+          keyPath: [`sc.b3.iptsChanges`],
+          value: [` `]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
           keyPath: [`all.toggles.b3AddForm`],
           value: [false]
         }}), async (...args) =>
