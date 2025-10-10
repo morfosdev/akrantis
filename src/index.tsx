@@ -2621,9 +2621,14 @@ borderRadius: 10,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ 
-	width: "fit-content",
- minWidth: 120, height: 30, backgroundColor: "$var_all.colors.primary", borderRadius: 5, alignItems: "center", justifyContent: "center" }`],
+            styles:[`{
+	paddingHorizontal: 35,
+	paddingVertical: 8,
+	backgroundColor: "#A2DA90",
+	borderRadius: 8,
+	alignItems: "center",
+	justifyContent: "center"
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -2644,7 +2649,11 @@ async (...args) =>
           ],
 
           arrStyles: [
-            `{ color: "#FFF" }`
+            `{
+	color: "#FFF",
+	fontSize: 14,
+	fontWeight: '500',
+}`
           ],
 
           children: [
