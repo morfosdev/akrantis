@@ -2611,7 +2611,7 @@ borderRadius: 10,
 	width: '100%',
 	justifyContent: 'center',
 	alignItems: 'center',
-	height: '100px',
+	height: '40px',
 	flexDirection: 'row',
 	backgroundColor: '#FFF',
 }`],
@@ -2658,6 +2658,21 @@ async (...args) =>
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+	height: '30px',
+	width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
