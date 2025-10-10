@@ -2584,6 +2584,7 @@ backgroundColor: 'transparent',
 	width: "100%", 
 	height: "100%",
 	backgroundColor: '#f5f5f5',
+	padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -2593,14 +2594,11 @@ backgroundColor: 'transparent',
 
             styles:[`{
 flex: 1,
-margin: 20,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
-borderWidth: 1,
-borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
