@@ -2140,7 +2140,8 @@ justifyContent: "center"
             styles:[`{
 	width: 200,
 	height: "100%",
-	backgroundColor: "white"
+	backgroundColor: "white",
+	paddingHorizontal: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[
