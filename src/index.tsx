@@ -2022,16 +2022,14 @@ justifyContent: "center"
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-        `{ 
-	width: "100%",
-	flexDirection: "row",
-	alignItems: "center",
-	justifyContent: "flex-start"
- }`, `{
+            styles:[`{
 	backgroundColor: "white",
-	paddingHorizontal: 20,
-	height: 50,
+	paddingHorizontal: 35,
+	height: 70,
+	paddingVertical: 15,
+	flexDirection: 'row',
+	alignItems: 'center',
+	width: "100%",
 }`],
 
             functions:[()=>{}],            childrenItems:[
