@@ -2312,7 +2312,7 @@ width: '100%',
 
       largura: "18px",
 
-      preenchimento: ['black'],
+      preenchimento: [`transparent`],
 
       args,
     }}/>],
