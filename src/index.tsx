@@ -2334,7 +2334,16 @@ width: '100%',
 backgroundColor: 'transparent',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a0login");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
