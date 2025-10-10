@@ -2185,7 +2185,6 @@ width: '100%',
 
             styles:[`{
 	flexDirection: 'row',
-	alignItems: 'center',
 	backgroundColor: 'transparent',
 }`],
 
