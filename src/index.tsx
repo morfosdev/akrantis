@@ -2698,7 +2698,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '44px',
 flexDirection: 'row',
-paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -2877,9 +2876,8 @@ paddingHorizontal: '10px',
 width: '100%',
 justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
+height: '55px',
 flexDirection: 'row',
-paddingHorizontal: '10px',
 }`],
 
             functions:[async (...args) =>
