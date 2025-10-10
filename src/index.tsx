@@ -2172,7 +2172,7 @@ justifyContent: "center"
 alignItems: 'center',
 justifyContent: 'space-between',
 flexDirection: 'row',
-paddingHorizontal: '24',
+paddingHorizontal: '10',
 paddingVertical: '8',
 borderRadius: '8px',
 width: '100%',
@@ -2245,7 +2245,7 @@ backgroundColor: '#F5F5F7',
             elementsProperties:['{}'],
 
             styles:[`{ 
-	width: 10,
+	width: 8,
 	height: 10,
 	alignItems: "center",
 	justifyContent: "center",
