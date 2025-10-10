@@ -2263,7 +2263,6 @@ width: '155px',
           args,
 
         }}/>, 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2280,42 +2279,7 @@ width: '155px',
 
             args,
           }}/>
-        , (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={19}
-    height={16}
-    fill="red"
-    viewBox="0 0 19 16"
-    {...props}
-  >
-    <Path
-      stroke="#9197B3"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="m7.039 12 4.693-4-4.693-4"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.03894 12L11.7316 8L7.03894 4" stroke="#9197B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      `,
-
-      altura: "16px",
-
-      largura: "18px",
-
-      preenchimento: ['black'],
-
-      args,
-    }}/>],
+        ],
 
             args,
           }}/>
