@@ -2269,7 +2269,7 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{ 
-	width: 10,
+	width: 34,
 	height: 10,
 	alignItems: "center",
 	justifyContent: "center",
