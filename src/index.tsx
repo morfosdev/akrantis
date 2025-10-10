@@ -2719,7 +2719,10 @@ paddingHorizontal: '10px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#9197B3',
+	fontSize: 14,
+}`
           ],
 
           children: [
@@ -2750,7 +2753,10 @@ paddingHorizontal: '10px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#9197B3',
+	fontSize: 14,
+}`
           ],
 
           children: [
@@ -2781,7 +2787,10 @@ paddingHorizontal: '10px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#9197B3',
+	fontSize: 14,
+}`
           ],
 
           children: [
@@ -2811,7 +2820,10 @@ paddingHorizontal: '10px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#9197B3',
+	fontSize: 14,
+}`
           ],
 
           children: [
