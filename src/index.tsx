@@ -2199,6 +2199,7 @@ justifyContent: "center"
             styles:[`{
 	height: '1px',
 	width: '100%',
+	backgroundColor: '#f5f5f5',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -2579,7 +2580,11 @@ backgroundColor: 'transparent',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: "100%", height: "100%" }`],
+            styles:[`{ 
+	width: "100%", 
+	height: "100%",
+	backgroundColor: '#f5f5f5',
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
