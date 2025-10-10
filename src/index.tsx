@@ -2581,8 +2581,8 @@ backgroundColor: 'transparent',
             elementsProperties:['{}'],
 
             styles:[`{ 
-	width: "100%", 
 	height: "100%",
+	flex: 1,
 	backgroundColor: '#f5f5f5',
 	padding: 20,
 }`],
@@ -2594,10 +2594,10 @@ backgroundColor: 'transparent',
 
             styles:[`{
 flex: 1,
+height: '100%',
 backgroundColor: '#FFF',
 alignItems: 'center',
-paddingHorizontal: 20,
-paddingBottom: 35,
+padding: 20,
 borderRadius: 10,
 }`],
 
