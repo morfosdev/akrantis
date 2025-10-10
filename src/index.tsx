@@ -2173,7 +2173,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -2242,7 +2242,8 @@ width: '155px',
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
+        , 
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -2261,7 +2262,24 @@ width: '155px',
 
           args,
 
-        }}/>],
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+	width: 10,
+	height: 10,
+	alignItems: "center",
+	justifyContent: "center",
+	backgroundColor: "transparent"
+ }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -2276,7 +2294,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -3949,7 +3967,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -4032,7 +4050,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -4115,7 +4133,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -4197,7 +4215,7 @@ flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
-width: '155px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
