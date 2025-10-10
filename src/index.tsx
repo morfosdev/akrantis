@@ -2609,7 +2609,7 @@ borderRadius: 10,
 
             styles:[`{
 	width: '100%',
-	justifyContent: 'center',
+	justifyContent: 'flex-end',
 	alignItems: 'center',
 	height: '40px',
 	flexDirection: 'row',
