@@ -2030,6 +2030,7 @@ justifyContent: "center"
 	flexDirection: 'row',
 	alignItems: 'center',
 	width: "100%",
+	box-shadow: 0px 1px 20px 0px #00000014,
 }`],
 
             functions:[()=>{}],            childrenItems:[
