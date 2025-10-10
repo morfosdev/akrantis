@@ -2116,7 +2116,7 @@ justifyContent: "center"
             elementsProperties:['{}'],
 
             styles:[`{ 
-	width: 8,
+	width: 15,
 	height: 10,
 	alignItems: "center",
 	justifyContent: "center",
