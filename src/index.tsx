@@ -2169,12 +2169,28 @@ justifyContent: "center"
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
 width: '100%',
 }`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
@@ -2242,8 +2258,7 @@ width: '100%',
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -2262,21 +2277,7 @@ width: '100%',
 
           args,
 
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-	width: 34,
-	height: 10,
-	alignItems: "center",
-	justifyContent: "center",
-	backgroundColor: "transparent"
- }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
+        }}/>],
 
             args,
           }}/>
@@ -2326,6 +2327,7 @@ width: '100%',
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
@@ -4053,6 +4055,7 @@ async (...args) =>
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
@@ -4136,6 +4139,7 @@ width: '100%',
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
@@ -4219,6 +4223,7 @@ width: '100%',
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
@@ -4301,6 +4306,7 @@ width: '100%',
 
             styles:[`{
 alignItems: 'center',
+justifyContent: 'space-between',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
