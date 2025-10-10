@@ -2248,7 +2248,11 @@ width: '155px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	fontSize: 14,
+	fontWeight: '500',
+	color: '#9197B3',
+}`
           ],
 
           children: [
