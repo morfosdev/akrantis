@@ -2175,6 +2175,7 @@ paddingHorizontal: '24',
 paddingVertical: '8',
 borderRadius: '8px',
 width: '100%',
+backgroundColor: '#F5F5F7',
 }`],
 
             functions:[()=>{}],            childrenItems:[
