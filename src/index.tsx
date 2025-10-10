@@ -2332,6 +2332,17 @@ width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+	flexDirection: 'row',
+	backgroundColor: 'transparent',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
@@ -2397,8 +2408,7 @@ width: '100%',
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -2417,21 +2427,7 @@ width: '100%',
 
           args,
 
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-	width: 34,
-	height: 10,
-	alignItems: "center",
-	justifyContent: "center",
-	backgroundColor: "transparent"
- }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
+        }}/>],
 
             args,
           }}/>
