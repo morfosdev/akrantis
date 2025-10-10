@@ -2146,6 +2146,7 @@ justifyContent: "center"
             `{ 
 	fontWeight: "400",
 	fontSize: 12,
+	color: '#86868B',
 }`
           ],
 
