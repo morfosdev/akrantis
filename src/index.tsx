@@ -2090,8 +2090,8 @@ justifyContent: "center"
             styles:[`{
 	width: 150,
 	flexDirection: "row",
-	justifyContent: "start",
-	alignItems: "center"
+	justifyContent: "center",
+	alignItems: "center",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -2109,26 +2109,62 @@ justifyContent: "center"
       URIvariablePath:["https://images.unsplash.com/photo-1488831861984-179da3647265?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
-            
-        `{ 
-	fontWeight: "bold",
-	fontSize: 12
-}`, `{ marginLeft: 5 }`
+            `{ 
+	fontWeight: "500",
+	fontSize: 14,
+}`
           ],
 
           children: [
-            `Admin`
+            `Evano`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+	fontWeight: "400",
+	fontSize: 12,
+}`
+          ],
+
+          children: [
+            `ADM`
           ],
 
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
